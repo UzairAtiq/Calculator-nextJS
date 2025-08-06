@@ -8,7 +8,7 @@ const Calculator = () => {
   const [result, setResult] = useState("");
   //Function to update the number
   const updateNumber = (e) => {
-    if(result){
+    if (result) {
       clearAll();
     }
     let value = parseInt(e.target.textContent);
@@ -59,16 +59,17 @@ const Calculator = () => {
   return (
     <div className="container flex items-center justify-center m-10 text-6xl">
       <div className="calculator-container flex flex-col h-[80%]">
-        <div className="top text-center rounded-2xl border-1 border-amber-400 h-30 flex justify-center items-center" >
+        <div className="top text-center rounded-2xl border-1 border-amber-400 h-30 flex justify-center items-center">
           {numOne}
           {operation}
           {numTwo}
           {result}
         </div>
-       
-        <div className="buttons grid grid-rows-4 grid-cols-4 gap-x-12 gap-y-15 border-amber-600 border-1 rounded-2xl  *:p-6 *:bg-[var(--coolers)] *:rounded-3xl *:hover:bg-blue-700" style={{backgroundColor : `#${'000814'}`}}>
-      
-       
+
+        <div
+          className="buttons grid grid-rows-4 grid-cols-4 gap-x-12 gap-y-15 border-amber-600 border-1 rounded-2xl  *:p-6 *:bg-[var(--coolers)] *:rounded-3xl *:hover:bg-blue-700"
+          style={{ backgroundColor: `#${"000814"}` }}
+        >
           <div
             className="button m-4 text-center hover:text-amber-300"
             onClick={updateNumber}
@@ -88,11 +89,11 @@ const Calculator = () => {
             7
           </div>
           <div
-          className="button m-4 text-center hover:text-amber-300"
-          onClick={clearAll}
-        >
-          AC
-        </div>
+            className="button m-4 text-center hover:text-amber-300"
+            onClick={clearAll}
+          >
+            AC
+          </div>
 
           <div
             className="button m-4 text-center hover:text-amber-300"
@@ -106,20 +107,20 @@ const Calculator = () => {
           >
             5
           </div>
-         
+
           <div
             className="button m-4 text-center hover:text-amber-300"
             onClick={updateNumber}
           >
             4
           </div>
-            <div
+          <div
             className="button m-4 text-center hover:text-amber-300 "
             onClick={performOperation}
           >
             x
           </div>
-         
+
           <div
             className="button m-4 text-center hover:text-amber-300"
             onClick={updateNumber}
@@ -138,7 +139,7 @@ const Calculator = () => {
           >
             1
           </div>
-           <div
+          <div
             className="button m-4 text-center hover:text-amber-300"
             onClick={performOperation}
           >
